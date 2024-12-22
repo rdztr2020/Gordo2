@@ -51,12 +51,12 @@ const Navbar = () => {
       </div>
 
       {isMobileMenuOpen && (
-        <div className="w-full backdrop-blur-none lg:hidden">
+        <div className="w-full  backdrop-blur-md lg:hidden">
           {LINKS.map((link, index) => (
             <a
               key={index}
               href={`#${link.targetId}`}
-              className="block p-4 uppercase tracking-tighter text-white"
+              className="block p-4 uppercase tracking-tighter text-slate-300 text-center"
               onClick={(e) => handleScroll(e, link.targetId)}
             >
               {link.text}
